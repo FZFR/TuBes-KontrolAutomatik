@@ -1,3 +1,5 @@
-# NewPing Arduino Library for Arduino
+## Need Help to merge/combine two Arduino sketches Into one
 
-## See the [NewPing Wiki](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) for documentation
+
+### For everyone looking NewPing Arduino Library for Arduino
+#### See the [NewPing Wiki](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) for documentation
