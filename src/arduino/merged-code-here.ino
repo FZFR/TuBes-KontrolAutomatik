@@ -47,7 +47,7 @@ int flowsensor = 6;    //The pin location of the sensor
 
 void setup() {
      Serial.begin(9600);       //This is the setup function where the serial port is initialised,
-  servo.attach(ServoPin);
+   servo.attach(ServoPin);
    pinMode(flowsensor, INPUT); //initializes digital pin 2 as an input
    attachInterrupt(0, rpm, RISING); //and the interrupt is attached
    
@@ -75,15 +75,15 @@ void loop() {
  sei();            //Enables interrupts
  delay (1000);      //Wait 1 second
  cli();            //Disable interrupts
- Calc = (FlowPulse * 60 / 7.5); //(Pulse frequency x 60) / 7.5Q, = flow rate in L/hour 
+ Calc = (FlowPulse * 1 / 7.5); //(Pulse frequency x 1min) / 7.5Q, = flow rate in L/hour 
  Serial.print (Calc, DEC); //Prints the number calculated above
- Serial.print (" L/Jam\r\n"); //Prints "L/hour" and returns a  new line
+ Serial.print (" L/menit\r\n"); //Prints "L/hour" and returns a  new line
   
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
   lcd.setCursor(0, 2);
   lcd.print(Calc,DEC);   // print the Flow Rate
-  lcd.print(" L/Jam");
+  lcd.print(" L/menit");
  }
 }
 
