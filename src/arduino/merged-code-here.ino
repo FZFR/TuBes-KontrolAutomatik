@@ -1,12 +1,11 @@
 /*
-This tutorial Demonstrates the use of Flow Sensor
- Web: blog.circuits4you.com
+This tutorial Demonstrates the use of Flow Sensor, Ultrasonic, and Servo
 
-  The circuit:
+The circuit for flow:
 Flow Sensor Connections
-Yellow --- Pin 6
-Red    --- +5V
-Black  --- GND     
+Yellow(control) --- Pin 6
+Red             --- +5V
+Black           --- GND     
       
 LCD Connections      
  * LCD RS pin to digital pin 12
@@ -20,7 +19,14 @@ LCD Connections
  * One end to ground
  * Another end to LCD VO pin (pin 3)
  
- This example code is in the public domain.
+ 
+ The circuit for ultrasonic and servo:
+ Yellow(servo)       --- 5
+ Trigger(ultrasonic) --- 3
+ Echo(ultrasonic)    --- 2
+ Red(servo)          --- Vin(depend on what we want, if we want big torque use ±7V)
+ Red(ultrasonic)     --- +5V
+ Black               --- GND
  */
 
 // include the library code:
@@ -33,8 +39,8 @@ const int ServoPin = 5; // input pin servo(signal/control)
 const int TriggerPin = 3; // Trigger pin HC-SR04
 const int EchoPin = 2; // Echo  HC-SR04
 
-// 40 = jarak maks terbaca
-NewPing sonar(TriggerPin, EchoPin, 40);
+// 34= jarak maks terbaca
+NewPing sonar(TriggerPin, EchoPin, 34);
 Servo servo;
 
 // initialize the library with the numbers of the interface pins
@@ -67,9 +73,9 @@ void loop() {
   lcd.setCursor(1, 2);
   lcd.print(cm);   // print the Flow Rate
   lcd.print(" cm");
-  int angle = map(cm, 2, 15, 15, 40);
+  int angle = map(cm, 34, 17, 17, 2); // can inverse the number row
   servo.write(angle);
-  delay(50); // respon dari servo
+  delay(50); // respon dari servo (ms)
 }{
  FlowPulse = 0;      //Set NbTops to 0 ready for calculations
  sei();            //Enables interrupts
