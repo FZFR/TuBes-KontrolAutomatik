@@ -1,4 +1,7 @@
-# TuBes-KontrolAutomatik
+# Need Help to combine two Arduino sketches Into one (Flow with LCD and Servo with Ultrasonic)
+
+
+## TuBes-KontrolAutomatik
 Tugas Besar mata kuliah Kontrol Automatik menggunakan sensor ultrasonic, pompa air mini, flowmeter dan servo. 
 Mengukur Q3(debit keluar) terhadap H1(ketinggian Tank 1)
 <ul><li>Sensor Ultrasonic membaca ketinggian air di Tank 1 </li>
