@@ -1,8 +1,6 @@
-
-
 /*
-This tutorial Demonstrates the use of Flow Sensor (only flow sensor and LCD, i just modify a little bit)
- Web: blog.circuits4you.com thanks for the author
+This tutorial Demonstrates the use of Flow Sensor
+ Web: blog.circuits4you.com
 
   The circuit:
 Flow Sensor Connections
@@ -20,7 +18,7 @@ LCD Connections
  * LCD R/W pin to ground
  * 1K resistor:
  * One end to ground
- * Another end to LCD VO pin (pin 7)
+ * Another end to LCD VO pin (pin 3)
  
  This example code is in the public domain.
  */
@@ -48,10 +46,9 @@ int flowsensor = 6;    //The pin location of the sensor
 
 
 void setup() {
-     Serial.begin(9600);
+     Serial.begin(9600);       //This is the setup function where the serial port is initialised,
   servo.attach(ServoPin);
    pinMode(flowsensor, INPUT); //initializes digital pin 2 as an input
-   Serial.begin(9600);         //This is the setup function where the serial port is initialised,
    attachInterrupt(0, rpm, RISING); //and the interrupt is attached
    
   // set up the LCD's number of columns and rows: 
