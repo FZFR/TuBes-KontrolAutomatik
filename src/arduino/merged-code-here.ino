@@ -1,5 +1,5 @@
 /*
-This tutorial Demonstrates the use of Flow Sensor, Ultrasonic, and Servo
+This is Demonstration the use of Flow Sensor, Ultrasonic, and Servo
 
 The circuit for flow:
 Flow Sensor Connections
