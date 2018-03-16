@@ -1,4 +1,4 @@
-## Need Help to combine two Arduino sketches Into one (Flow with LCD and Servo with Ultrasonic) 
+### Need Help to combine two Arduino sketches Into one (Flow with LCD and Servo with Ultrasonic) 
 ##### (So i can read Ultrasonic and Flow sensor data on LCD)
 
 ## TuBes-KontrolAutomatik
