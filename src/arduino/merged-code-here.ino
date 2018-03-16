@@ -77,7 +77,7 @@ void loop() {
  cli();            //Disable interrupts
  Calc = (FlowPulse * 1 / 7.5); //(Pulse frequency x 1min) / 7.5Q, = flow rate in L/hour 
  Serial.print (Calc, DEC); //Prints the number calculated above
- Serial.print (" L/menit\r\n"); //Prints "L/hour" and returns a  new line
+ Serial.print (" L/menit\r\n"); //Prints "L/menit" and returns a  new line
   
   // set the cursor to column 0, line 1
   // (note: line 1 is the second row, since counting begins with 0):
