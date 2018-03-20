@@ -16,6 +16,7 @@ Servo servo;
 
 
 int sp = null; // setpoint
+int cm = sonar.ping_cm(); // jarak dari library
 
 float kp = null;
 float ki = null;
@@ -23,7 +24,7 @@ float kd = null;
 
 float p,i,d,pid,pidx;
 float error,errorx,jumlahe;
-long durasi, jarak;
+long durasi, cm;
 
 void setup() {
   Serial.begin (9600);
@@ -32,8 +33,7 @@ void setup() {
   pinMode(EchoPin, INPUT);
   }
 
-void loop() {
- int cm = sonar.ping_cm();
+void loop() { 
   error = sp - cm;
   p = error * kp;
   jumlahe = error + errorx;
@@ -60,11 +60,10 @@ void loop() {
   digitalWrite(TriggerPin, HIGH);
   delayMicroseconds(10); // Added this line
   digitalWrite(TriggerPin, LOW);
-  durasi = pulseIn(EchoPin, HIGH);
+  // durasi = pulseIn(EchoPin, HIGH);
   // jarak = (durasi/2) / 29.1;
   // int cm = sonar.ping_cm();
-  Serial.print(cm);
-  
+  Serial.print(cm); 
   Serial.println(" cm");
   Serial.print("PID= ");
   Serial.println(pidx);
