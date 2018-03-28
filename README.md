@@ -1,5 +1,5 @@
-#### (Bagi yang nitip buatin kodingan ada di folder
-[/src/main/examples] [https://github.com/Fazzafr/TuBes-KontrolAutomatik/blob/master/src/main/examples/]
+#### Bagi yang nitip buatin kodingan ada di folder [/src/main/examples] (https://github.com/Fazzafr/TuBes-KontrolAutomatik/blob/master/src/main/examples/)
+
 # TuBes-KontrolAutomatik
 Tugas Besar mata kuliah Kontrol Automatik menggunakan sensor ultrasonic, pompa air mini, flowmeter dan servo. 
 Mengukur Q3(debit keluar) terhadap H1(ketinggian Tank 1)
