@@ -1,3 +1,4 @@
+### Bagi yang nitip kodingan ada di folder ... /example
 # TuBes-KontrolAutomatik
 Tugas Besar mata kuliah Kontrol Automatik menggunakan sensor ultrasonic, pompa air mini, flowmeter dan servo. 
 Mengukur Q3(debit keluar) terhadap H1(ketinggian Tank 1)
@@ -16,3 +17,7 @@ Mengukur Q3(debit keluar) terhadap H1(ketinggian Tank 1)
 + Pada kodingan, setpoint diubah kee H1 menggunakan persamaan yang ada lalu PID akan bekerja setelah nilai setpoint di konversi ke H1, lihat sensor flow Q3 yang di dapat.
 + Lihat nilai setpoint dengan nilai real yang dibaca sensor Q3 untuk dapat error.
 + Tujuan memakai PID adalah untuk menjaga aliran tetap pada setpoint yang kita inginkan, jadi jika aliran yang kita inginkan 100L/Jam maka valve akan membuka dan menutup untuk mempertahankan setpoint yang diinginkan.
+
+
+
+
