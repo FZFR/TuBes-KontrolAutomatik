@@ -1,4 +1,4 @@
-#### Bagi yang nitip buatin kodingan ada di folder: [INI](../blob/master/src/main/examples) 
+#### Bagi yang nitip buatin kodingan ada di folder: [INI](../master/src/main/examples) 
 
 
 
