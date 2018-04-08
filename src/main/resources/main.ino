@@ -1,20 +1,23 @@
 /*
 Pin: 
-Trigger 10
-Echo    11
-Servo   9
+Trigger 4
+Echo    5
+Servo   7
+Flow    2
 input   5V
-
 */
 
 
+#include <LiquidCrystal.h>
 #include <Servo.h>
-#define trigPin 10
-#define echoPin 11
+#define trigPin 4
+#define echoPin 5
+
+LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
 
 Servo servo;
 // int sound = 250;
-int q= 50;                                      // aliran
+int q= 50;                                      // aliran, ini parameter yang diubah
 int sp= (0.079*q)+1.63;                         // setpoint aliran dari perhitungan dari mencari persamaan
 
 float kp = 0.022355769;
@@ -47,7 +50,14 @@ pinMode(hallsensor, INPUT); //initializes digital pin 2 as an input
 attachInterrupt(0, rpm, RISING); //and the interrupt is attached
 pinMode(trigPin, OUTPUT);
 pinMode(echoPin, INPUT);
-servo.attach(9);
+servo.attach(7);
+ 
+  lcd.begin(16, 2);
+  lcd.print("KontrolAutomatik");
+  lcd.setCursor(0, 1);
+  lcd.print("   Kelompok 5");
+  delay(3000);
+  lcd.clear();
 }
 
 
@@ -108,10 +118,17 @@ jarak_i = (17 - jarak);
           }
         
     Serial.print(jarak_i);
-    Serial.println(" cm"); // menampilkan data yang didapatkan sensor ultrasonik
+    Serial.println(" cm "); // menampilkan data yang didapatkan sensor ultrasonik
     Serial.print("PID= "); // menampilkan error yang direduksi oleh PID
     Serial.println(pidx);
-delay(50);  // delay pergerakan servo dalam ms
+    lcd.setCursor(0, 0);
+    lcd.print("Tinggi: ");   
+    lcd.print(jarak_i);
+    lcd.print("cm               ");            
+    lcd.setCursor(0, 2);
+    lcd.print("Flow: ");       
+    lcd.print(Calc,DEC);    
+    lcd.print("L/jam           ");       
 
 
 // tambah kode disini buat kodingan baru
