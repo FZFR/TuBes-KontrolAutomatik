@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <!-- Meta -->
+    <meta name="description" content="Dashboard IoT Tugas Besar Kontrol Automatik.">
+    <meta name="author" content="Fazza Fakhri (SHIR0YASHA)">
+
+
+    <title>Dashboard Admin Tubes Kontrol Automatik</title>
+
+    <!-- vendor css -->
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tubes.css">
+  </head>
+
+  <body>
+
+    <!-- ##### SIDEBAR LOGO ##### -->
+    <div class="kt-sideleft-header">
+      <div class="kt-logo"><a href="index.html">Dashboard <small>Admin TuBes</small></a></div>
+      <div id="ktDate" class="kt-date-today">
+      </div>
+    </div><!-- kt-sideleft-header -->
+
+    <!-- ##### SIDEBAR MENU ##### -->
+    <div class="kt-sideleft">
+      <label class="kt-sidebar-label">Navigasi</label>
+      <ul class="nav kt-sideleft-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">
+            <i class="icon ion-ios-home-outline"></i>
+            <span>Dashboard</span>
+          </a>
+        </li><!-- nav-item -->
+        
+      </ul>
+    </div><!-- kt-sideleft -->
+
+    <!-- ##### HEAD PANEL ##### -->
+    <div class="kt-headpanel">
+      <div class="kt-headpanel-left">
+        <a id="naviconMenu" href="#" class="kt-navicon d-none d-lg-flex"><img src="http://qbgrow.com/magen/iot-admin/img/menu.svg" width="30"/></a>
+        <a id="naviconMenuMobile" href="#" class="kt-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
+      </div><!-- kt-headpanel-left -->
+
+      <div class="kt-headpanel-right">
+        <div class="dropdown dropdown-notification">
+          <a href="#" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
+            <img src="http://qbgrow.com/magen/iot-admin/img/notification.svg" height="24"/>
+
+            <!-- start: if statement -->
+            <span class="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
+            <!-- end: if statement -->
+          </a>
+        </div><!-- dropdown -->
+        <div class="dropdown dropdown-profile">
+          <a href="#" class="nav-link nav-link-profile" data-toggle="dropdown">
+            <img src="../img/img.jpg" class="wd-32 rounded-circle" alt="">
+            <span class="logged-name"><span class="hidden-xs-down">SHIR0YASHA</span> <i class="fa fa-angle-down mg-l-3"></i></span>
+          </a>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+      </div><!-- kt-headpanel-right -->
+    <div class="kt-breadcrumb">
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="index.html">Tugas Besar</a>
+        <span class="breadcrumb-item active">Dashboard</span>
+      </nav>
+    </div><!-- kt-breadcrumb -->
+
+    <!-- ##### MAIN PANEL ##### -->
+    <div class="kt-mainpanel">
+      <div class="kt-pagetitle">
+        <h5>Dashboard</h5>
+      </div><!-- kt-pagetitle -->
+
+      <div class="kt-pagebody">
+
+        <div class="row row-sm">
+          <div class="col-lg-8">
+            <div class="row row-sm">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body pd-b-0">
+                    <img src="http://qbgrow.com/magen/iot-admin/img/senc.svg" width="60" class="card-icon"/>
+                    <h6 class="card-body-title tx-12 tx-spacing-2 mg-b-20">Sensor Debit</h6>
+                    <h2 class="tx-roboto tx-inverse">1 <small>liter/m</small></h2>
+                    <p class="tx-12"><span class="tx-success">Keterangan:</span> Menghitung debit keluaran (Q3)</p>
+                  </div><!-- card-body -->
+                  <div id="rs1" class="ht-50 ht-sm-70 mg-r--1"></div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body pd-b-0">
+                    <img src="http://qbgrow.com/magen/iot-admin/img/energy.svg" width="60" class="card-icon"/>
+                    <h6 class="card-body-title tx-12 tx-spacing-2 mg-b-20">Sensor Ketinggian Air</h6>
+                    <h2 class="tx-roboto tx-inverse">10 <small>cm</small></h2>
+                    <p class="tx-12"><span class="tx-success">Keterangan:</span> Menghitung ketinggian air (H1)</p>
+                  </div><!-- card-body -->
+                  <div id="rs2" class="ht-50 ht-sm-70 mg-r--1"></div>
+                </div><!-- card -->
+              </div><!-- col-6 -->
+                  <div class="card card-body pd-30 mg-t-20">
+              <h6 class="card-body-title tx-12 tx-spacing-1">Butuh Source Code?</h6>
+              <p>Silahkan check saja di akun berikut.</p>
+              <div class="tx-20">
+                <a href="https://Facebook.com/fazzafakhri" class="tx-primary mg-r-5"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/fazzafr" class="tx-info mg-r-5"><i class="fa fa-twitter"></i></a>                      
+                <a href="https://github.com/fazzafr" class="tx-inverse mg-r-5"><i class="fa fa-github"></i></a>
+                <a href="https://instagram.com/fazzafr" class="tx-pink mg-r-5"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div><!-- card -->
+            </div><!-- row -->
+
+            
+
+
+          </div><!-- col-8 -->
+          <div class="col-lg-4">
+            <div class="card pd-40 tx-center">
+              <div class="d-flex justify-content-center mg-b-30">
+                <img src="https://cdn.pixabay.com/photo/2017/03/23/12/32/arduino-2168193_960_720.png" class="wd-300" alt="" height="200">
+              </div>
+              <h6 class="tx-md-20 tx-inverse mg-b-20">TUBES Kontrol Automatik</h6>
+              <a href="#" class="btn btn-success btn-block">Connect</a>
+            </div><!-- card -->
+
+            
+
+          </div><!-- col-4 -->
+        </div><!-- row -->
+      </div><!-- kt-pagebody -->
+      
+      <div class="kt-footer">
+        <span>Copyright &copy;. All Rights Reserved. Fazza Fakhri R (SHIR0YASHA).</span>
+        <span>Created by: Fazza Fakhri R.</span>
+      </div><!-- kt-footer -->
+    </div><!-- kt-mainpanel -->
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/popper.js/popper.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="lib/rickshaw/rickshaw.min.js"></script>
+    <script src="lib/chart.js/Chart.js"></script>
+    <script src="js/magen-iot-admin.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
